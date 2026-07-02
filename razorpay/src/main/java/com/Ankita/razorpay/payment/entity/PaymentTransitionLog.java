@@ -1,6 +1,7 @@
 package com.Ankita.razorpay.payment.entity;
 
 
+import com.Ankita.razorpay.common.enums.PaymentEvent;
 import com.Ankita.razorpay.common.enums.PaymentStatus;
 import jakarta.persistence.*;
 

@@ -2,12 +2,18 @@ package com.Ankita.razorpay.merchant.entity;
 
 import com.Ankita.razorpay.common.enums.Environment;
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.util.UUID;
 
 
 @Entity
 @Table(name="api_key")
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class ApiKey {
 
     @Id

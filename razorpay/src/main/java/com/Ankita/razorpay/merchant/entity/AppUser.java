@@ -2,12 +2,18 @@ package com.Ankita.razorpay.merchant.entity;
 
 import com.Ankita.razorpay.common.enums.UserRole;
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.util.UUID;
 
 @Entity
 @Table(name="app_user")
-public class appUser {
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class AppUser {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)

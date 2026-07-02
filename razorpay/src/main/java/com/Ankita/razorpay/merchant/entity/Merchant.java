@@ -4,12 +4,19 @@ package com.Ankita.razorpay.merchant.entity;
 import com.Ankita.razorpay.common.enums.BusinessType;
 import com.Ankita.razorpay.common.enums.MerChantStatus;
 import jakarta.persistence.*;
-import lombok.Builder;
+import lombok.*;
 
 import java.util.UUID;
 
+
+
 @Entity
 @Table(name="merchant")
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class Merchant {
 
     @Id
