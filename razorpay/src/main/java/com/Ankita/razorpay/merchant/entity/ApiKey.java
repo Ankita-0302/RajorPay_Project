@@ -35,7 +35,9 @@ public class ApiKey {
     private Environment enviroment;
 
     @Column(nullable = false)
+    @Builder.Default
     private boolean enaled=true;
+
     private java.time.LocalDateTime lastUsedAt;
     private java.time.LocalDateTime rotatedAt;
     private java.time.LocalDateTime gracePeriodExpiresAt;

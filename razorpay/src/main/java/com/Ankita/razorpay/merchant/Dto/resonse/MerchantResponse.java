@@ -2,7 +2,8 @@ package com.Ankita.razorpay.merchant.Dto.resonse;
 
 import com.Ankita.razorpay.common.enums.BusinessType;
 import com.Ankita.razorpay.common.enums.MerChantStatus;
-import org.hibernate.validator.constraints.UUID;
+
+import java.util.UUID;
 
 public record MerchantResponse(
                                 UUID id,

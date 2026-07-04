@@ -3,6 +3,7 @@ package com.Ankita.razorpay.merchant.controller;
 import com.Ankita.razorpay.merchant.Dto.request.MerchantSignupRequest;
 import com.Ankita.razorpay.merchant.Dto.resonse.MerchantResponse;
 import com.Ankita.razorpay.merchant.service.AuthService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.apache.coyote.Response;
 import org.springframework.http.HttpStatus;
@@ -20,8 +21,8 @@ public class AuthController {
 
     private final AuthService authService;
 
-    @PostMapping
-    public ResponseEntity<MerchantResponse> signup(@RequestBody MerchantSignupRequest request)
+    @PostMapping("/signup")
+    public ResponseEntity<MerchantResponse> signup(@RequestBody @Valid MerchantSignupRequest request)
     {
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(authService.signup(request));
