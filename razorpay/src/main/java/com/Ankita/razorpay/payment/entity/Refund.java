@@ -1,9 +1,8 @@
-package com.Ankita.razorpay.merchant.entity;
+package com.Ankita.razorpay.payment.entity;
 
 
 import com.Ankita.razorpay.common.entity.Money;
 import com.Ankita.razorpay.common.enums.RefundStatus;
-import com.Ankita.razorpay.payment.entity.Payment;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.JdbcTypeCode;
@@ -11,7 +10,6 @@ import org.hibernate.type.SqlTypes;
 
 import java.time.LocalDateTime;
 import java.util.Map;
-import java.util.Optional;
 import java.util.UUID;
 
 @Entity
